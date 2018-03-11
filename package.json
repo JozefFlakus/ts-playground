@@ -2,6 +2,8 @@
   "name": "ts-playground",
   "version": "1.0.0",
   "author": "Józef Flakus",
+  "description": "TypeScript environment playground for internal presentations purposes",
+  "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && tsc",
@@ -24,6 +26,14 @@
     "ts-jest": "^21.1.3",
     "typescript": "^2.5.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JozefFlakus/ts-playground.git"
+  },
+
+  npm WARN ts-playground@1.0.0 No description
+npm WARN ts-playground@1.0.0 No repository field.
+npm WARN ts-playground@1.0.0 No license field.
   "jest": {
     "transform": {
       "^.+\\.ts?$": "./node_modules/ts-jest/preprocessor.js"
