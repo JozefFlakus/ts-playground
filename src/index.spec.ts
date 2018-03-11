@@ -41,7 +41,7 @@ describe('RxJS - marble testing', () => {
       map(v => v * 2),
     );
 
-    expect(stream).toBeObservable(expected$)
+    expect(stream).toBeObservable(expected$);
   });
 
   /**

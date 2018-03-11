@@ -30,7 +30,7 @@ const observer = {
  *  b$: 246|
  */
 
- of(1, 2 ,3)
+ of(1, 2, 3)
   .pipe(
     map(v => 2 * v)
   )
@@ -53,7 +53,7 @@ const observer = {
 
 // observable
 //   .pipe(
-//     map(v => 2 * v)
+//     map(v => 2 * v),
 //   )
 //   .subscribe(observer);
 
@@ -74,7 +74,7 @@ const observer = {
 
 // subscription = observable
 //   .pipe(
-//     map(v => 2 * v)
+//     map(v => 2 * v),
 //   )
 //   .subscribe(observer);
 
