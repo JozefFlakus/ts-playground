@@ -8,7 +8,7 @@
     "clean": "rimraf dist",
     "build": "npm run clean && tsc",
     "watch": "tsc -w",
-    "lint": "tslint --config tslint.json --project tsconfig.json --type-check",
+    "lint": "tslint --config tslint.json --project tsconfig.json",
     "test": "NODE_ENV=test jest --expand",
     "test:all": "NODE_ENV=test jest --expand",
     "test:watch": "NODE_ENV=test jest --expand --onlyChanged --watch",
@@ -28,7 +28,8 @@
     "nodemon": "^1.11.0",
     "rimraf": "^2.6.2",
     "ts-jest": "^21.1.3",
-    "typescript": "^2.7.2"
+    "typescript": "^2.7.2",
+    "tslint": "^5.9.1"
   },
   "repository": {
     "type": "git",
