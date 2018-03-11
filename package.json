@@ -1,0 +1,27 @@
+{
+  "name": "ts-playground",
+  "version": "1.0.0",
+  "author": "Józef Flakus",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "watch": "tsc -w",
+    "lint": "tslint --config tslint.json --project tsconfig.json --type-check",
+    "test": "NODE_ENV=test jest --expand",
+    "test:all": "NODE_ENV=test jest --expand",
+    "test:watch": "NODE_ENV=test jest --expand --onlyChanged --watch",
+    "test:coverage": "NODE_ENV=test jest --runInBand --coverage",
+    "serve": "nodemon dist/index.js"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.10"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.0",
+    "jest": "^21.2.1",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^21.1.3",
+    "typescript": "^2.5.2"
+  }
+}
